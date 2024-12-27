@@ -271,7 +271,7 @@ a:focus, a:active {
     text-decoration: none;
     color: #fff; /* Color blanco para el texto */
     background-color: #28a745; /* Fondo verde */
-    padding: 6px 10px; /* Tamaño de los botones */
+    padding: 6px 7px; /* Tamaño de los botones */
     border-radius: 5px;
     font-weight: bold;
     font-size: 0.75rem; /* Tamaño de la fuente */
