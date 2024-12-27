@@ -459,3 +459,17 @@ a:focus, a:active {
         max-width: 150px;       /* Reduce el tamaño de los botones en dispositivos móviles */
     }
 }
+
+
+
+
+
+/* Ocultar posibles anuncios */
+.ad-container, 
+.banner-ad, 
+iframe[src*="ads"], 
+div[class*="ads"], 
+[id*="ads"] {
+    display: none !important;
+    visibility: hidden !important;
+}

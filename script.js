@@ -34,3 +34,11 @@ function filterProducts() {
     const noResults = document.getElementById("noResults");
     noResults.style.display = hasResults ? "none" : "block";
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Busca elementos de anuncios conocidos
+    const ads = document.querySelectorAll(".ad-container, .banner-ad");
+    ads.forEach(ad => ad.remove());
+});
