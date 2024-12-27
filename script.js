@@ -42,3 +42,37 @@ document.addEventListener("DOMContentLoaded", function() {
     const ads = document.querySelectorAll(".ad-container, .banner-ad");
     ads.forEach(ad => ad.remove());
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Lista de selectores para identificar anuncios
+    const adSelectors = [
+        ".ad-container",       // Clases comunes de contenedores de anuncios
+        ".banner-ad",          // Banners publicitarios
+        "iframe[src*='ads']",  // iFrames con URLs relacionadas con anuncios
+        "div[class*='ads']",   // Divs con 'ads' en su clase
+        "[id*='ads']"          // Elementos con IDs que contienen 'ads'
+    ];
+
+    // Función para eliminar elementos coincidentes con los selectores
+    function removeAds() {
+        adSelectors.forEach(selector => {
+            const ads = document.querySelectorAll(selector);
+            ads.forEach(ad => {
+                ad.remove(); // Eliminar cada elemento encontrado
+                console.log(`Elemento eliminado: ${selector}`);
+            });
+        });
+    }
+
+    // Eliminar anuncios inicialmente
+    removeAds();
+
+    // Observar el DOM para eliminar anuncios cargados dinámicamente
+    const observer = new MutationObserver(() => {
+        removeAds();
+    });
+
+    // Configuración del observador para monitorear cambios en el DOM
+    observer.observe(document.body, { childList: true, subtree: true });
+});
