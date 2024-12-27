@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAD0sJc44VEy0B3VijF5t1rbxOuShukovNSY8TkU02Gl0laGyqWevOXLTizLQTZgAqGIHgRnxrKMzxFYA&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+</head>
+<body>
+
+    <header>
+        <div class="page-left-banner">
+            <h1><a href="../index.html">Anime Latam</a></h1>
+        </div>
+    </header>
+
+    <header>
+        <h1>¡Gracias por tu apoyo!</h1>
+           <h2>esto ayudara a mantener el proyecto en curso.</h2>
+        
+    </header>
+    <main class="donations">
+        <!-- Opción $1 USD con código de PayPal -->
+        <div class="donation-card">
+            <h2>Donar $1 USD</h2>
+            <p>Una pequeña ayuda que significa mucho.</p>
+            <div id="paypal-container-KEHHPPW7VK7LN"></div>
+            <script>
+                paypal.HostedButtons({
+                    hostedButtonId: "KEHHPPW7VK7LN",
+                }).render("#paypal-container-KEHHPPW7VK7LN");
+            </script>
+        </div>
+
+        <!-- Opción $3 USD con código de PayPal -->
+        <div class="donation-card">
+            <h2>Donar $3 USD</h2>
+            <p>¡Gracias por tu generosidad!</p>
+            <div id="paypal-container-RMRJCUVT8TH9U"></div>
+            <script>
+                paypal.HostedButtons({
+                    hostedButtonId: "RMRJCUVT8TH9U",
+                }).render("#paypal-container-RMRJCUVT8TH9U");
+            </script>
+        </div>
+        
+        <!-- Opción $5 USD con código de PayPal -->
+        <div class="donation-card">
+            <h2>Donar $5 USD</h2>
+            <p>¡Eres increíble! Gracias por tu gran apoyo.</p>
+            <div id="paypal-container-NEBBRFLRB5DML"></div>
+            <script>
+                paypal.HostedButtons({
+                    hostedButtonId: "NEBBRFLRB5DML",
+                }).render("#paypal-container-NEBBRFLRB5DML");
+            </script>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Latam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <input type="text" id="searchBar" placeholder="Buscar serie..." onkeyup="filterProducts()">
+        <button id="searchButton">Buscar</button>
+
+        <div class="header-buttons">
+            <a href="donaciones.html" class="header-button" id="donations">Donaciones</a>
+            <a href="javs.html" class="header-button" id="javs">JAVS</a>
+        </div>
+    </header>
+    <main>
+        <h1>Anime Latam</h1>
+        <h2>Episodios Disponibles</h2>
+
+
+        <div class="product-list">
+            <!--aqui van las tarjetas de los nuevos episiodios-->
+
+
+            <a href="/your name/yourname.html" class="product">
+            <img src="/your name/your_name_-cartel-7373.jpg" alt="your name">
+            <div class="details">
+                <h3>Your Name</h3>
+                <p>pelicula</p>
+                <p class="status out-of-stock">finalizado</p>
+            </div>
+            </a>
+
+
+
+            
+            <a href="/solo leveling/sololeveling.html" class="product">
+                <img src="/solo leveling/solo leveling.avif" alt="Solo leveling">
+                <div class="details">
+                    <h3>Solo leveling</h3>
+                    <p>12 episodios</p>
+                    <p class="status out-of-stock">finalizado</p>
+                </div>
+            </a>
+
+
+
+
+            <a href="/quiero comerme tu pancreas/tuoancreas.html" class="product">
+                <img src="quiero comerme tu pancreas/quierocomermetupancreas.jpg" alt="Kimi no Suizou wo Tabetai
+                ">
+                <div class="details">
+                    <h3>Kimi no Suizou wo Tabetai
+                    </h3>
+                    <p>Pelicula</p>
+                    <p class="status out-of-stock">Finalizado</p>
+                </div>
+            </a>
+            <a href="/el tiempo contigo/tiempocontigo.html" class="product">
+                <img src="/el tiempo contigo/el_tiempo_contigo.jpg" alt="Tenki No KO">
+                <div class="details">
+                    <h3>Tenki No Ko </h3>
+                    <p>Pelicula</p>
+                    <p class="status out-of-stock">Finalizado</p>
+                </div>
+            </a>
+        </div>
+        <!-- Mensaje de "No hay resultados" -->
+        <div id="noResults" style="display: none; color: red; font-weight: bold; margin-top: 20px;">
+            No hay resultados
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
